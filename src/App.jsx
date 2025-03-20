@@ -1,12 +1,11 @@
-const BASE_URL = import.meta.env.VITE_BASE_URL;
-const API_PATH = import.meta.env.VITE_API_PATH;
-import react from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Login from './pages/Login';
+import Home from './pages/Home';
 
 function App() {
   return(<>
     <Routes>
+      <Route path="/" element={<Home />}></Route>
       <Route path="/login" element={<Login />}></Route>
     </Routes>
   </>)
